@@ -78,7 +78,7 @@
 		    <nav id="docs-nav" class="docs-nav navbar">
 			    <ul class="section-items list-unstyled nav flex-column pb-3">
 				    <li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-1"><span class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>Introduction</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">What these docs are for</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">What these docs are for?</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2">Section Item 1.2</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3">Section Item 1.3</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-4">Section Item 1.4</a></li>
@@ -101,9 +101,9 @@
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-2">Section Item 5.2</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-3">Section Item 5.3</a></li>
 				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-6"><span class="theme-icon-holder me-2"><i class="fas fa-laptop-code"></i></span>Chromebook Exploits</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-1">Section Item 6.1</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-2">Section Item 6.2</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-3">Section Item 6.3</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-1">What is recovery mode?</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-2">What is developer mode?</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-3">Exploits possible with recovery mode</a></li>
 				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span class="theme-icon-holder me-2"><i class="fas fa-tablet-alt"></i></span>Mobile</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Section Item 7.1</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-2">Section Item 7.2</a></li>
@@ -556,11 +556,13 @@
 				    <header class="docs-header">
 					    <h1 class="docs-heading">Chromebook specific Exploits</h1>
 					    <section class="docs-intro">
-						    <p>This section is dedicated to exploits you can only do on your chromebook. The majority of these exploits will be preformed on the recovery screen.</p>
+						    <p>This section is dedicated to exploits you can only do on your chromebook. The majority of these exploits will be preformed on the recovery screen.</p> </br>
+							<h3 style="text-align:center">Disclaimer</h3>
+							<p>We are not responsible for what you do in the recovery screen or anything else that you get from section. If something fails then it is your fault and your responsibility.</p>
 						</section><!--//docs-intro-->
 				    </header>
 				     <section class="docs-section" id="item-6-1">
-						<h2 class="section-heading">What is the Recovery Screen</h2>
+						<h2 class="section-heading">What is the Recovery Screen?</h2>
 								<p>The recovery screen is a screen that you can access by pressing <code>Esc + Refresh + Power</code> on your chromebook. This will take you to a screen that looks like one of these:</p>
 								<img width="500" src="assets/images/recoveryScreenBlack.png" alt="Recovery Screen Black" class="img-fluid"/> <img width="500" src="assets/images/recoveryScreenWhite.png" alt="Recovery Screen White" class="img-fluid"/> <br/> <br/>
 								Recovery mode is intended for recovering your laptop if something really bad has happened to your laptop like ChromeOS is missing or damaged screen shows up or the something has gone wrong screen that looks similar to the recovery screen
@@ -608,10 +610,47 @@
 						    <li>Bypass any restrictions ChromeOS would usually have</li>
 						    <li>Allows you to set gbb flags</li>
 					</section><!--//section-->
-					<p>There are some risks to enabling developer mode like it will wipe your Chromebook and it will void your warranty. It also makes your Chromebook less secure and more vulnerable to attacks.</p>
+					<p>There are some risks to enabling developer mode like it will wipe your Chromebook and it will void your warranty. It also makes your Chromebook less secure and more vulnerable to attacks. To do it you need to:</p>
+					<ol>
+						<li>Go to the recovery screen</li>
+						<li>Press <code>Ctrl + D</code></li>
+						<li>Press enter</li>
+						<li>Wait for it to wipe your Chromebook and enable developer mode</li>
+						<li>Then your Chromebook will be in developer mode</li>
+						<li>If it failed you may have a policy blocking it by your enterprise (you can check by going to chrome://policy and checking if deviceBlockDevMode is set to <code>false</code> or is unset)</li>
+					</ol>
 					<section class="docs-section" id="item-6-3">
-							<h2 class="section-heading">Section Item 6.3</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+							<h2 class="section-heading">Exploits avaliable with Recovery mode</h2>
+						<p>There are several exploits you can use. Some are:</p>
+						<ul>
+							<li>Badrecovery</li>
+							<li>Brunch</li>
+							<li>ChromeBrew</li>
+							<li>CryptoSmite</li>
+							<li>E-Halycon</li>
+							<li>Icarus</li>
+							<li>Sh1mmer</li>
+							<li>ShimBoot</li>
+							<li>Kervner Version Switcher</li>
+							<li>Priism</li>
+						</ul>
+						<p>We can add descriptions to these and split all of these exploits into two different categories: exploits that uenroll you and ones that don't </p>
+						<p>Exploits that unenroll you:</p>
+						<ul>
+							<li>Badrecovery unenrolls all chromebooks on kervner 3 or lower <a href="https://github.com/BinBashBanana/badrecovery">Git repo</a></li>
+							<li>CryptoSmite unerolls all chromebooks on kervner 2 or lower <a href="https://github.com/FWSmasher/CryptoSmite/tree/a26fb8dc394adf22566787f3a6d23eb3c55466d1">Git repo</a></li>
+							<li>E-Halycon temporarily puts your chromebook in an unerolled enviornement <a href="/assets/html/e-halcyon/">Git repo</a></li>
+							<li>Icarus is where you host a server to uneroll your chromebook and requires version 126-131 <a href="https://github.com/MunyDev/icarus/tree/62206a2afca46eb73d572c59df259df8d8820b92">Git repo</a> </li>
+							<li>Sh1mmer requires that you haven't updated to version 112 <a href="https://darkn.bio/sh1mmer">Instructions</a></li>
+						</ul>
+						<p>Exploits that don't unenroll you:</p>
+						<ul>
+							<li>Brunch allows you to boot into chromeos on a normal computer (uefi based system) <a href="https://github.com/sebanc/brunch">Git Repo</a></li>
+							<li>ChromeBrew is an extension of sh1mmer that allows you to do more stuff <a href="dl.darkn.bio">File Host</a> (that was the file host I used until it got blocked so find a new one)</li>
+							<li>ShimBoot allows you to boot into debain (linux distro) from ChromeOS without changing anything <a href="https://github.com/ading2210/shimboot">Git repo</a></li>
+							<li>Kervner Version Switcher allows you to switch ChromeOS versions on unerolled Chromebooks <a href="https://github.com/kxtzownsu/KVS">Git repo</a></li>
+							<li>Priism is a recovery image manager <a href="https://github.com/Ethereal-Workshop/Priism">Git Repo</a></li>
+						</ul>
 					</section><!--//section-->
 			    </article><!--//docs-article-->
 			    
