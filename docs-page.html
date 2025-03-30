@@ -83,33 +83,33 @@
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3">Services</a></li>
 				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Proxy</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-1">UV Static</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-2">Benrogo</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-3">Mercury Workshop</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-2">How to make your own proxy</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-3">Titanium Network</a></li>
 				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder me-2"><i class="fas fa-box"></i></span>Deployment</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-1">Custom Domain</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-2">Fastly</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-3">Firebase (web.app)</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-4">Cloudfare (pages.dev)</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-4">Cloudflare (pages.dev)</a></li>
 				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4"><span class="theme-icon-holder me-2"><i class="fas fa-cogs"></i></span>How to make your own website</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-1">How to obtain games</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-2">What to learn</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-3">Potential Monetization</a></li>
 					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-5"><span class="theme-icon-holder me-2"><i class="fas fa-tools"></i></span>Ext's</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-1">LTMEAT Print</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-1">ExtFlood3r</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-2">ExtPrint3r</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-3">Misc</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-3">ExtHang3r</a></li>
 					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-6"><span class="theme-icon-holder me-2"><i class="fas fa-laptop-code"></i></span>Chromebook Exploits</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-1">What is recovery mode?</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-2">What is developer mode?</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-3">Exploits possible with recovery mode</a></li>
-					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-8"><span class="theme-icon-holder me-2"><i class="fas fa-book-reader"></i></span>Extension Blockers</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-8"><span class="theme-icon-holder me-2"><i class="fas fa-book-reader"></i></span>Other exploits</a></li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#item-8-1">LTMEAT Print</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-8-2">Section Item 8.2</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-8-3">Section Item 8.3</a></li>
 				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-9"><span class="theme-icon-holder me-2"><i class="fas fa-lightbulb"></i></span>FAQs</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-1">FAQ 1</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-2">FAQ 2</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-3">FAQ 3</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-1">Proxy Stuff</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-2">How to add games or get support</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-3">General Questions</a></li>
 			    </ul>
 
 		    </nav><!--//docs-nav-->
@@ -496,22 +496,126 @@
 							Custom domains can be deployed with most services as long as you have the nessacary DNS records.
 							The only problem with custom domains is that they can be expensive.
 							It is also possible to "bring your own domain" (BYOD) for PeteZah.
-							This allows you to buy your own domain and configure it with fastly to redirect to PeteZah.
+							This allows you to buy your own domain and configure it with fastly to redirect to PeteZah. 
+							You do this by:
 						</p>
+						<ol>
+							<li>Buy a domain (you can get it from any domain name provider like <a href="https://www.namecheap.com/">Namecheap</a>)</li>
+							<li>Follow Fastly Config below</li>
+							<li>Go to your Fastly link's service configuration</li>
+							<li>Click edit configuration => clone version</li>
+							<li>Add your domain</li>
+							<li>Go to the home page of Fastly and scroll down to TLS</li>
+							<li>Go to TLS Certificates page</li>
+							<li>Put your domain link in</li>
+							<li>Setup the dns records accordingly</li>
+							<li>Wait 5 min to an hour, and your link should be ready</li>
+						</ol>
 					</section><!--//section-->
 					
 					<section class="docs-section" id="item-3-2">
 						<h2 class="section-heading">Fastly</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+						<p>Fastly allows you to have a website that will imitate a different website. 
+							This can be used for PeteZah to make PeteZah Fastly links. 
+							This is how you do it:</p>
+						<ol>
+							<li>Go to <a href="https://fastly.com/">Fastly.com</a></li>
+							<li>Register an account (You can use <a href="https://temp-mail.org/">Temp-Mail.org</a>)</li>
+							<li>Go to the home page of Fastly and click create service</li>
+							<li>Set service name (Optional)</li>
+							<li>Set domain to Example-Name.global.ssl.fastly.net/ (Change example-name to anything you want)</li>
+							<li>Direct it to <a href="https://petezahgames.com/">Petezahgames.com</a></li>
+							<li>Wait for it to be uploaded and go to your link</li>
+							<li>You can now post your new link in <a href="https://discord.gg/bb4HDaGTdM">community links</a> if you wish in PeteZah's Discord server</li>
+						</ol>
 					</section><!--//section-->
 					
 					<section class="docs-section" id="item-3-3">
-						<h2 class="section-heading">Section Item 3.3</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+						<h2 class="section-heading">Firebase</h2>
+						<p>Firebase is currently unblocked for Lightspeed.
+							You can deploy your website with firebase by following these steps:</p>
+						<ol>
+							<li>Go to the <a href="https://console.firebase.google.com/">Firebase console</a></li>
+							<li>Sign in with your google account</li>
+							<li>Click on the create project button</li>
+							<li>Set your project name</li>
+							<li>Click create project</li>
+							<li>Download Firebase's CLI by running <code>npm -g firebase-tools</code></li>
+							<li>If you don't have npm you can download it at node.js and use the MSI installer if on Windows and use the other installers for other operating systems</li>
+							<li>Run <code>firebase login</code></li>
+							<li>Follow onscreen instructions</li>
+							<li>Run <code>firebase init</code></li>
+							<li>Choose hosting</li>
+							<li>Choose your project</li>
+							<li>Set your public directory to your build folder</li>
+							<li>Decline when it asks if it wants your configuration to be single page app</li>
+							<li>Run firebase deploy</li>
+							<li>Wait for it to deploy</li>
+							<li>Go to your link</li>
+							<li>Congrats you did it</li>
+						</ol>
+						<p>If you would like to create a Hypackel or a PeteZah link with this you can follow these instructions:</p>
+						<ol>
+							<li>Go to <a href="https://github.com/pineapple-petezah/pineapple-petezah.github.io">PeteZah's Github</a> or <a href="https://github.com/Proxy-alt/Public-learn-more">Hypackel's Github</a> depending on who's code you want to use</li>
+							<li>Click on fork button</li>
+							<li>Click create a fork</li>
+							<li>Go to your fork</li>
+							<li>Click on the green button</li>
+							<li>Click on download zip</li>
+							<li>Unzip the file</li>
+							<li>Go to the folder</li>
+							<li>Open the terminal</li>
+							<li>Run <code>firebase init</code></li>
+							<li>Choose hosting</li>
+							<li>Choose your project</li>
+							<li>Set your public directory to the build folder</li>
+							<li>Decline when it asks if it wants your configuration to be single page app</li>
+							<li>Run <code>firebase deploy</code></li>
+							<li>Wait for it to deploy</li>
+							<li>Go to your link</li>
+							<li>Congrats you did it</li>
+						</ol>
 					</section><!--//section-->
 					<section class="docs-section" id="item-3-4">
-						<h2 class="section-heading">Section Item 3.4</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+						<h2 class="section-heading">Cloudflare</h2>
+						<p>Cloudflare pages is a static hosting service for websites.
+							You can deploy your website with cloudflare by following these steps:</p>
+						<ol>
+							<li>Go to the <a href="https://dash.cloudflare.com/">Cloudflare dashboard</a></li>
+							<li>Sign in</li>
+							<li>Click on workers and pages</li>
+							<li>Set your project name</li>
+							<li>Click create</li>
+							<li>Choose your repository</li>
+							<li>Choose your branch</li>
+							<li>Set your build command to <code>npm run build</code></li>
+							<li>Set your output directory to <code>build</code></li>
+							<li>Click continue</li>
+							<li>Click create</li>
+							<li>Click on the settings tab</li>
+							<li>Wait for it to deploy</li>
+							<li>Go to your link</li>
+							<li>Congrats you did it</li>
+						</ol>
+						<p>If you would like to deploy your own pages.dev for PeteZah or Hypackel follow these steps:</p>
+						<ol>
+							<li>Go to <a href="https://github.com/pineapple-petezah/pineapple-petezah.github.io">PeteZah's Github</a> or <a href="https://github.com/Proxy-alt/Public-learn-more">Hypackel's Github</a> depending on whos code you want to use</li>
+							<li>Click on fork button</li>
+							<li>Click create a fork</li>
+							<li>Go to your fork</li>
+							<li>Go to the Cloudflare dashboard</li>
+							<li>Click on workers and pages</li>
+							<li>Set your project name</li>
+							<li>Click create</li>
+							<li>Choose the repository that is a fork of the repo</li>
+							<li>Choose your branch</li>
+							<li>Click continue</li>
+							<li>Click create</li>
+							<li>Click on the settings tab</li>
+							<li>Wait for it to deploy</li>
+							<li>Go to your link</li>
+							<li>Congrats you did it</li>
+						</ol>
 					</section><!--//section-->
 			    </article><!--//docs-article-->
 			    
@@ -850,6 +954,14 @@
 						<div class="col-12 col-md-4 mb-3">
 					<a href="/assets/images/printconfig.png"><img width="1000" height="1000" src="/assets/images/printconfig.png" alt="LTMEAT Print Config" class="figure-img img-fluid shadow" title="LTMEAT Print Config"></a> 
 						</div></div><br/> <br/>
+						<h3>The amount of time extension freezed: few weeks if done correctly</h3>
+						<div class="progress my-4">
+							<div class="progress-bar bg-info" role="progressbar" style="width: 100%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+						<h3>The amount of lag: none</h3>
+						<div class="progress my-4">
+							<div class="progress-bar bg-warning" role="progressbar" style="width: 0%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
 					<p>You will then want to go to the original url but add view-source: before it. After that you can continue with the usual steps</p>
 					<p>If you would like to do the other method you will just have to have the url in the search bar but don't hit enter yet. You will then want to quickly drag it out then quickly hit enter. If you did everything correctly it should in a new window. You can now continue with the orginal steps.</p>
 					</section><!--//section-->
