@@ -1,4 +1,6 @@
 User-agent: *
-Disallow: /assets/html/e-halcyon/
+Disallow: /assets/html/e-halcyon/index.html
+Disallow: /assets/html/e-halcyon/clouds.html
+Disallow: howToFormat.html
 Allow: /
 Sitemap: https://docs.petezahgames.com/sitemap.xml
