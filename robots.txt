@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /assets/html/e-halcyon/
+Allow: /
+Sitemap: https://docs.petezahgames.com/sitemap.xml
